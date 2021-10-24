@@ -8,6 +8,14 @@ sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-te
 
 sudo apt install ros-melodic-dynamixel-sdk ros-melodic-turtlebot3-msgs ros-melodic-turtlebot3
 
+Agregar en el .bashrc:
+
+source /opt/ros/melodic/setup.bash
+
+export TURTLEBOT3_MODEL=burger
+export ROS_MASTER_URI=http://192.168.1.100:11311
+export ROS_HOSTNAME=192.168.1.101
+
 Permisos ssh:
 ```
 sudo systemctl enable ssh
