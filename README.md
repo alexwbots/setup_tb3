@@ -14,7 +14,7 @@ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 ```
 
 ```
-sudo apt install ros-melodic-usb-cam ros-melodic-visp ros-melodic-visp-auto-tracker
+sudo apt install ros-melodic-usb-cam ros-melodic-visp ros-melodic-visp-auto-tracker ros-melodic-image-view
 ```
 
 
