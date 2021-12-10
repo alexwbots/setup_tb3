@@ -17,6 +17,10 @@ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 sudo apt install ros-melodic-usb-cam ros-melodic-visp ros-melodic-visp-auto-tracker ros-melodic-image-view
 ```
 
+Revisar esto para flashear el opencr:
+https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/
+
+
 
 Agregar en el .bashrc:
 ```
