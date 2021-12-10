@@ -43,12 +43,17 @@ Configuración de internet:
 ```
 sudo nano /etc/network/interfaces
 ```
+Copiamos el siguiente código:
+```
 allow-hotplug wlan0
 iface wlan0 inet dhcp
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
+```
+Luego:
 ```
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+Copiamos el siguiente código:
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -58,4 +63,4 @@ network={
   psk="turtlemodem"
   key_mgmt=WPA-PSK
 }
-
+```
