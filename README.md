@@ -32,6 +32,7 @@ export ROS_HOSTNAME=192.168.1.101
 ```
 Permisos ssh:
 ```
+sudo apt install openssh-server
 sudo systemctl enable ssh
 sudo reboot
 ```
