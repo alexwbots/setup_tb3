@@ -4,15 +4,15 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 sudo apt install curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt update
-sudo apt install ros-noetic-ros-base
+sudo apt -y install ros-noetic-ros-base
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+sudo apt -y install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 sudo rosdep init
 rosdep update
 
 echo "2. Installing ROS packages for tb3"
-sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
+sudo apt-get -y install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
   ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
   ros-noetic-rosserial-python ros-noetic-rosserial-client \
@@ -53,6 +53,6 @@ echo \"network={
 }">>/etc/wpa_supplicant/wpa_supplicant.conf
 
 echo "6. Permissions for SSH"
-#sudo apt install openssh-server
+#sudo apt -y install openssh-server
 #sudo systemctl enable ssh
 #sudo reboot
