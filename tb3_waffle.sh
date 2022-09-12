@@ -5,11 +5,11 @@ sudo apt -y install curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt update
 sudo apt -y install ros-noetic-ros-base
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
 sudo apt -y install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 sudo rosdep init
 rosdep update
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 
 echo "2. Installing ROS packages for tb3"
 sudo apt-get -y install ros-noetic-joy ros-noetic-teleop-twist-joy \
