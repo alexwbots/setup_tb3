@@ -46,13 +46,13 @@ iface wlan0 inet dhcp
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf">>/etc/network/interfaces
 echo "ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
-echo \"network={ 
-  ssid=\"ALEXANDER.-1\"
-  psk=\"norecuerdo\"
+echo "network={ 
+  ssid="ALEXANDER.-1"
+  psk="norecuerdo"
   key_mgmt=WPA-PSK 
 }">>/etc/wpa_supplicant/wpa_supplicant.conf
 
 echo "6. Permissions for SSH"
-#sudo apt -y install openssh-server
-#sudo systemctl enable ssh
-#sudo reboot
+sudo apt -y install openssh-server
+sudo systemctl enable ssh
+sudo reboot
