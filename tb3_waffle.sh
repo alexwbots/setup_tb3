@@ -46,7 +46,7 @@ iface wlan0 inet dhcp
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf">>/etc/network/interfaces
 echo "ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
-echo "network={ 
+network={ 
   ssid="ALEXANDER.-1"
   psk="norecuerdo"
   key_mgmt=WPA-PSK 
