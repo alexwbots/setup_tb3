@@ -20,15 +20,14 @@ sudo apt install ros-melodic-usb-cam ros-melodic-visp ros-melodic-visp-auto-trac
 Revisar esto para flashear el opencr:
 https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/
 
-
-
 Agregar en el .bashrc:
 ```
 source /opt/ros/melodic/setup.bash
 
 export TURTLEBOT3_MODEL=burger
-export ROS_MASTER_URI=http://192.168.1.100:11311
-export ROS_HOSTNAME=192.168.1.101
+export PC_IP=$(hostname -I | awk '{print $1}')
+export ROS_MASTER_URI=http://${PC_IP}:11311
+export ROS_HOSTNAME=${PC_IP}
 ```
 Permisos ssh:
 ```
