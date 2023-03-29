@@ -56,3 +56,6 @@ echo "6. Permissions for SSH"
 sudo apt -y install openssh-server
 sudo systemctl enable ssh
 sudo reboot
+
+echo "Borrar ssh keygen"
+ssh-keygen -R 192.168.0.200
