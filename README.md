@@ -4,17 +4,17 @@ http://wiki.ros.org/melodic/Installation/Ubuntu
 
 Install ROS-BASE
 ```
-sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt* ros-melodic-rviz ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
+sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc ros-noetic-rgbd-launch ros-noetic-rosserial-arduino ros-noetic-rosserial-python ros-noetic-rosserial-client ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 ```
 
 ```
-git clone -b melodic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 ```
 
 ```
-sudo apt install ros-melodic-usb-cam ros-melodic-visp ros-melodic-visp-auto-tracker ros-melodic-image-view
+sudo apt install ros-noetic-usb-cam ros-noetic-visp ros-noetic-visp-auto-tracker ros-noetic-image-view
 ```
 
 Revisar esto para flashear el opencr:
@@ -22,7 +22,7 @@ https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/
 
 Agregar en el .bashrc:
 ```
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 
 export TURTLEBOT3_MODEL=burger
 export PC_IP=$(hostname -I | awk '{print $1}')
