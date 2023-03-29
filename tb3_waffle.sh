@@ -23,7 +23,10 @@ ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers \
 ros-noetic-dynamixel-sdk ros-noetic-turtlebot3-msgs ros-noetic-turtlebot3 \
 ros-noetic-usb-cam ros-noetic-visp ros-noetic-visp-auto-tracker ros-noetic-image-view \
 ros-noetic-hls-lfcd-lds-driver
-  
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+
 echo "3. Parameters for tb3"
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
 source ~/.bashrc
